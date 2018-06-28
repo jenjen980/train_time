@@ -1,0 +1,14 @@
+.jumbotron{
+    height: 250px;
+    color: white;
+
+}
+#background{
+    background-image: url("../images/background6.jpg");
+    height: 25%;
+    /* background-color: violet; */
+    background-size: cover;
+    /* z-index: -1; */
+    /* width:75%;
+    height: 250px; */
+}
