@@ -1,7 +1,3 @@
-
-// Initialize Firebase and change the values of the config values with your own Firebase config values.
-
-//{/* <script src="https://www.gstatic.com/firebasejs/5.1.0/firebase.js"></script> */}
   // Initialize Firebase
   var config = {
     apiKey: "AIzaSyAo96ze8zFBYKdak0xwkgfixNtrJKpvkO0",
@@ -42,14 +38,7 @@ $("#add-train").on("click", function(event){
     });
 });
     database.ref().on("child_added", function(childSnapshot) {
-    //database.ref().on("value", function(snapshot){    
 
-   // var sv = snapshot.val();
-//storing snapshot value
-    // console.log(sv.name);
-    // console.log(sv.destination);
-    // console.log(sv.time);
-    // console.log(sv.frequency);
 
     var newName = childSnapshot.val().name;
     var newDestination = childSnapshot.val().destination;
@@ -88,13 +77,6 @@ $("#add-train").on("click", function(event){
     $("#trainName, #destination, #first-Time, #frequency").val("");
     return false;
 
-
-
-//change the html
-    // $("#train-name").text(sv.name);
-    // $("#destination").text(sv.destination);
-    // $("#first-time").text(sv.time);
-    // $("#frequency").text(sv.frequency);
 
 }, function(errorObject){
     console.log("The read failed: " + errorObject.code);
