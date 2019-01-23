@@ -13,6 +13,6 @@ Here is where the app is deployed: https://jenjen980.github.io/train_time/
 * Firebase
 * Moment.js
 
-## Authors
+## Author
 
 * **Jennifer Dean**
